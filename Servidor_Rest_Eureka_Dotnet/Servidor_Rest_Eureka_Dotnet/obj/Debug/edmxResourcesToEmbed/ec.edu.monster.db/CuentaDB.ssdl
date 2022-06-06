@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="EUREKABANKModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Cuenta">
+    <Key>
+      <PropertyRef Name="chr_cuencodigo" />
+    </Key>
+    <Property Name="chr_cuencodigo" Type="char" MaxLength="8" Nullable="false" />
+    <Property Name="chr_monecodigo" Type="char" MaxLength="2" Nullable="false" />
+    <Property Name="chr_sucucodigo" Type="char" MaxLength="3" Nullable="false" />
+    <Property Name="chr_emplcreacuenta" Type="char" MaxLength="4" Nullable="false" />
+    <Property Name="chr_cliecodigo" Type="char" MaxLength="5" Nullable="false" />
+    <Property Name="dec_cuensaldo" Type="money" Nullable="false" />
+    <Property Name="dtt_cuenfechacreacion" Type="datetime" Nullable="false" />
+    <Property Name="vch_cuenestado" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="int_cuencontmov" Type="int" Nullable="false" />
+    <Property Name="chr_cuenclave" Type="char" MaxLength="6" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="EUREKABANKModelStoreContainer">
+    <EntitySet Name="Cuenta" EntityType="Self.Cuenta" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

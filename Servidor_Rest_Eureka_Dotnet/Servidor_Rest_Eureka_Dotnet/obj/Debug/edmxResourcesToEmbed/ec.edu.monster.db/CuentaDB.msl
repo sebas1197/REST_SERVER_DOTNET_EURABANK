@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="EUREKABANKModelStoreContainer" CdmEntityContainer="EUREKABANKEntities">
+    <EntitySetMapping Name="Cuenta">
+      <EntityTypeMapping TypeName="EUREKABANKModel.Cuenta">
+        <MappingFragment StoreEntitySet="Cuenta">
+          <ScalarProperty Name="chr_cuencodigo" ColumnName="chr_cuencodigo" />
+          <ScalarProperty Name="chr_monecodigo" ColumnName="chr_monecodigo" />
+          <ScalarProperty Name="chr_sucucodigo" ColumnName="chr_sucucodigo" />
+          <ScalarProperty Name="chr_emplcreacuenta" ColumnName="chr_emplcreacuenta" />
+          <ScalarProperty Name="chr_cliecodigo" ColumnName="chr_cliecodigo" />
+          <ScalarProperty Name="dec_cuensaldo" ColumnName="dec_cuensaldo" />
+          <ScalarProperty Name="dtt_cuenfechacreacion" ColumnName="dtt_cuenfechacreacion" />
+          <ScalarProperty Name="vch_cuenestado" ColumnName="vch_cuenestado" />
+          <ScalarProperty Name="int_cuencontmov" ColumnName="int_cuencontmov" />
+          <ScalarProperty Name="chr_cuenclave" ColumnName="chr_cuenclave" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
